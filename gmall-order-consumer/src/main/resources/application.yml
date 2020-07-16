@@ -1,0 +1,11 @@
+server:
+  port: 8761
+
+dubbo:
+  application:
+    name: gmall-order-consumer
+  registry:
+    address: 127.0.0.1:21810
+    protocol: zookeeper
+  monitor:
+    protocol: registry

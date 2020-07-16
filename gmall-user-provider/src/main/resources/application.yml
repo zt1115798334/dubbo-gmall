@@ -1,0 +1,16 @@
+
+dubbo:
+  application:
+    name: gmall-user-provider
+  registry:
+    protocol: zookeeper
+    address: 127.0.0.1:21810
+  scan:
+    base-packages: org.example
+  protocol:
+    name: dubbo
+    port: 20880
+  monitor:
+    protocol: registry
+server:
+  port: 8899
